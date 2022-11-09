@@ -11,9 +11,13 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func showToast(_ sender: UIButton) {
+        ToastManager.shared.showToast(message: "Please fill all text fiels. 🫥", type: .message, view: self.view)
+    }
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
 }
 

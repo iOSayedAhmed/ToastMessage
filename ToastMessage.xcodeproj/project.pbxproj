@@ -13,6 +13,11 @@
 		C8B6C745291AF1A800B892DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8B6C743291AF1A800B892DE /* Main.storyboard */; };
 		C8B6C747291AF1A900B892DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8B6C746291AF1A900B892DE /* Assets.xcassets */; };
 		C8B6C74A291AF1A900B892DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8B6C748291AF1A900B892DE /* LaunchScreen.storyboard */; };
+		C8B6C754291AF23100B892DE /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B6C753291AF23100B892DE /* ToastView.swift */; };
+		C8B6C756291AF24A00B892DE /* ToastView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8B6C755291AF24A00B892DE /* ToastView.xib */; };
+		C8B6C759291AF6C300B892DE /* KeyboardStateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B6C758291AF6C300B892DE /* KeyboardStateManager.swift */; };
+		C8B6C75B291B036900B892DE /* ToastManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B6C75A291B036900B892DE /* ToastManager.swift */; };
+		C8B6C75D291B096E00B892DE /* UIView + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B6C75C291B096E00B892DE /* UIView + Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		C8B6C746291AF1A900B892DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C8B6C749291AF1A900B892DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C8B6C74B291AF1A900B892DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8B6C753291AF23100B892DE /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
+		C8B6C755291AF24A00B892DE /* ToastView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToastView.xib; sourceTree = "<group>"; };
+		C8B6C758291AF6C300B892DE /* KeyboardStateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardStateManager.swift; sourceTree = "<group>"; };
+		C8B6C75A291B036900B892DE /* ToastManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastManager.swift; sourceTree = "<group>"; };
+		C8B6C75C291B096E00B892DE /* UIView + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,44 @@
 		C8B6C73C291AF1A800B892DE /* ToastMessage */ = {
 			isa = PBXGroup;
 			children = (
-				C8B6C73D291AF1A800B892DE /* AppDelegate.swift */,
-				C8B6C73F291AF1A800B892DE /* SceneDelegate.swift */,
+				C8B6C752291AF1EF00B892DE /* Supportes Files */,
+				C8B6C757291AF6A700B892DE /* Manegers */,
+				C8B6C751291AF1DE00B892DE /* Views */,
 				C8B6C741291AF1A800B892DE /* ViewController.swift */,
 				C8B6C743291AF1A800B892DE /* Main.storyboard */,
 				C8B6C746291AF1A900B892DE /* Assets.xcassets */,
 				C8B6C748291AF1A900B892DE /* LaunchScreen.storyboard */,
 				C8B6C74B291AF1A900B892DE /* Info.plist */,
+				C8B6C75C291B096E00B892DE /* UIView + Extensions.swift */,
 			);
 			path = ToastMessage;
+			sourceTree = "<group>";
+		};
+		C8B6C751291AF1DE00B892DE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C8B6C753291AF23100B892DE /* ToastView.swift */,
+				C8B6C755291AF24A00B892DE /* ToastView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C8B6C752291AF1EF00B892DE /* Supportes Files */ = {
+			isa = PBXGroup;
+			children = (
+				C8B6C73D291AF1A800B892DE /* AppDelegate.swift */,
+				C8B6C73F291AF1A800B892DE /* SceneDelegate.swift */,
+			);
+			path = "Supportes Files";
+			sourceTree = "<group>";
+		};
+		C8B6C757291AF6A700B892DE /* Manegers */ = {
+			isa = PBXGroup;
+			children = (
+				C8B6C75A291B036900B892DE /* ToastManager.swift */,
+				C8B6C758291AF6C300B892DE /* KeyboardStateManager.swift */,
+			);
+			path = Manegers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +164,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8B6C756291AF24A00B892DE /* ToastView.xib in Resources */,
 				C8B6C74A291AF1A900B892DE /* LaunchScreen.storyboard in Resources */,
 				C8B6C747291AF1A900B892DE /* Assets.xcassets in Resources */,
 				C8B6C745291AF1A800B892DE /* Main.storyboard in Resources */,
@@ -138,7 +178,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8B6C75D291B096E00B892DE /* UIView + Extensions.swift in Sources */,
+				C8B6C754291AF23100B892DE /* ToastView.swift in Sources */,
+				C8B6C759291AF6C300B892DE /* KeyboardStateManager.swift in Sources */,
 				C8B6C742291AF1A800B892DE /* ViewController.swift in Sources */,
+				C8B6C75B291B036900B892DE /* ToastManager.swift in Sources */,
 				C8B6C73E291AF1A800B892DE /* AppDelegate.swift in Sources */,
 				C8B6C740291AF1A800B892DE /* SceneDelegate.swift in Sources */,
 			);
@@ -293,8 +337,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -321,8 +366,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
